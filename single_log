@@ -1,0 +1,8052 @@
+qemu-system-i386 -serial stdio build/os.img
+heap start:0x00200000 heap end:0x08000000
+Hello, OS World!
+heap start:0x00200000 heap end:0x08000000
+in kmt thread_cnt:1
+file_open:inode->name:/proc/0
+in file_close:fd:3
+in kmt thread_cnt:2
+file_open:inode->name:/proc/1
+in file_close:fd:3
+in kmt thread_cnt:3
+file_open:inode->name:/proc/2
+in file_close:fd:3
+old id:0 current id:1
+in os_interrupt eip:0x001031c9
+this is irq_timer
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4777 size:0
+dev_test:this is the random number return by /dev/random:5260 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:621 size:0
+dev_test:this is the random number return by /dev/random:4524 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:689 size:0
+dev_test:this is the random number return by /dev/random:3454 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1804 size:0
+dev_test:this is the random number return by /dev/random:1919 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /devold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+old id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+the file has not been created!!
+kv_test:create!!!
+file_open:inode->name:/forty/40c
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/old id:0 current id:1
+in os_interrupt eip:0x001000d8
+this is irq_timer
+
+/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4466 size:0
+dev_test:this is the random number return by /dev/random:4800 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6887 size:0
+dev_test:this is the random number return by /dev/random:4464 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6544 size:0
+dev_test:this is the random number return by /dev/random:7925 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6492 size:0
+dev_test:this is the random number return by /dev/random:3175 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operatold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/old id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+ion return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:595 size:0
+dev_test:this is the random number return by /dev/random:2079 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2909 size:0
+dev_test:this is the random number return by /dev/random:1989 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4598 size:0
+dev_test:this is the random number return by /dev/random:5374 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3878 size:0
+dev_test:old id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+o:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_testold id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+this is the random number return by /dev/random:4004 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:960 size:0
+dev_test:this is the random number return by /dev/random:3382 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4525 size:0
+dev_test:this is the random number return by /dev/random:3038 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7635 size:0
+dev_test:this is the random number return by /dev/random:6200 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 3
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:3
+proc_test: the process fd is 3
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:3
+proc_test:end
+
+proc_test: the cpu fd is 3
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:3
+proc_test: the mem fd is 3
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:3
+proc_test: the process fd is 3
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:3
+proc_test:end
+
+proc_test: the cpu fd is 3
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:3
+proc_test: the mem fd is 3
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:3
+proc_test: the process fd is 3
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:3
+proc_test:end
+
+proc_test: the cpu fd is 3
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:3
+proc_test: the mem fd is 3
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:3
+proc_test: the process fd is 3
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:3
+proc_test:end
+
+proc_test: the cpu fd is 3
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:3
+proc_test: the mem fd is 3
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:3
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c siold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+dev_test:end
+
+dev_test:random fd:4
+dev_test:this is the random number return by /dev/random:7639 size:0
+dev_test:this is the random number return by /dev/random:5070 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:4
+dev_test:end
+
+dev_test:random fd:4
+dev_test:this is the random number return by /dev/random:3782 size:0
+dev_test:this is the random number return by /dev/random:6876 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:4
+dev_test:end
+
+dev_test:random fd:4
+dev_test:this is the random number return by /dev/random:367 size:0
+dev_test:this is the random number return by /dev/random:1751 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:4
+dev_test:end
+
+dev_test:random fd:4
+dev_test:this is the random number return by /dev/random:3828 size:0
+dev_test:this is the random number return by /dev/random:976 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/nuold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain old id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+ze:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404old id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+ll operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:4
+dev_test:end
+
+dev_test:random fd:4
+dev_test:this is the random number return by /dev/random:4055 size:0
+dev_test:this is the random number return by /dev/random:424 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:4
+dev_test:end
+
+dev_test:random fd:4
+dev_test:this is the random number return by /dev/random:1425 size:0
+dev_test:this is the random number return by /dev/random:7860 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:4
+dev_test:end
+
+dev_test:random fd:4
+dev_test:this is the random number return by /dev/random:6778 size:0
+dev_test:this is the random number return by /dev/random:6204 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:4
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+to be done
+in file_close:fd:6
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 24old id:2 current id:0
+in os_interrupt eip:0x0010502d
+this is irq_timer
+
+040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:3
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:3
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:385 size:0
+dev_test:this is the random number return by /dev/random:5633 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6920 size:0
+dev_test:this is the random number return by /dev/random:2212 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7655 size:0
+dev_test:this is the random number return by /dev/random:7085 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3935 size:0
+dev_test:this is the random number return by /dev/random:3715 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+06006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:readold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:639 size:0
+dev_test:this is the random number return by /dev/random:1166 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3914 size:0
+dev_test:this is the random number return by /dev/random:5980 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7083 size:0
+dev_test:this is the random number return by /dev/random:6785 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7148 size:0
+dev_test:this is the random number return by /dev/random:8078 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+fo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+ /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is old id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2638 size:0
+dev_test:this is the random number return by /dev/random:7498 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6394 size:0
+dev_test:this is the random number return by /dev/random:4122 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4955 size:0
+dev_test:this is the random number return by /dev/random:7737 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5035 size:0
+dev_test:this is the random number return by /dev/random:4394 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6old id:2 current id:0
+in os_interrupt eip:0x0010015b
+this is irq_timer
+
+a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2860 size:0
+dev_test:this is the random number return by /dev/random:5776 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2926 size:0
+dev_test:this is the random number return by /dev/random:1361 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1171 size:0
+dev_test:this is the random number return by /dev/random:5287 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero bold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be dold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+efore read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5216 size:0
+dev_test:this is the random number return by /dev/random:1426 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7088 size:0
+dev_test:this is the random number return by /dev/random:4044 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7035 size:0
+dev_test:this is the random number return by /dev/random:7714 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4231 size:0
+dev_test:this is the random number return by /dev/random:7914 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+one
+in file_close:fd:5
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack sold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_teold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4238 size:0
+dev_test:this is the random number return by /dev/random:1004 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2384 size:0
+dev_test:this is the random number return by /dev/random:496 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3568 size:0
+dev_test:this is the random number return by /dev/random:7896 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4237 size:0
+dev_test:this is the random number return by /dev/random:1519 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+tart: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+old id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+st:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_told id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3570 size:0
+dev_test:this is the random number return by /dev/random:203 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6876 size:0
+dev_test:this is the random number return by /dev/random:6143 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:536 size:0
+dev_test:this is the random number return by /dev/random:6509 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404old id:1 current id:2
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+est:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7312 size:0
+dev_test:this is the random number return by /dev/random:3818 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4102 size:0
+dev_test:this is the random number return by /dev/random:4780 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3841 size:0
+dev_test:this is the random number return by /dev/random:8070 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7227 size:0
+dev_test:this is the random number return by /dev/random:5635 size:0
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+ack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfoold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+thold id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6558 size:0
+dev_test:this is the random number return by /dev/random:8161 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1664 size:0
+dev_test:this is the random number return by /dev/random:3705 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1735 size:0
+dev_test:this is the random number return by /dev/random:2334 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144old id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+is is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5150 size:0
+dev_test:this is the random number return by /dev/random:875 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6235 size:0
+dev_test:this is the random number return by /dev/random:6177 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7121 size:0
+dev_test:this is the random number return by /dev/random:7177 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:thiold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:reold id:2 current id:0
+in os_interrupt eip:0x0010502d
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40cold id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+s is the random number return by /dev/random:4114 size:0
+dev_test:this is the random number return by /dev/random:1260 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6014 size:0
+dev_test:this is the random number return by /dev/random:929 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1932 size:0
+dev_test:this is the random number return by /dev/random:4295 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2983 size:0
+dev_test:this is the random number return by /dev/random:6814 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8old id:1 current id:2
+in os_interrupt eip:0x0010501c
+this is irq_timer
+
+main to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006old id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+ size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2085 size:0
+dev_test:this is the random number return by /dev/random:6945 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6297 size:0
+dev_test:this is the random number return by /dev/random:1101 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3725 size:0
+dev_test:this is the random number return by /dev/random:7480 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:404old id:1 current id:2
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain old id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kvold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+04040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1387 size:0
+dev_test:this is the random number return by /dev/random:3429 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6682 size:0
+dev_test:this is the random number return by /dev/random:1146 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:166 size:0
+dev_test:this is the random number return by /dev/random:4932 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7131 size:0
+dev_test:this is the randomold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remainold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kold id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+ number return by /dev/random:5033 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4803 size:0
+dev_test:this is the random number return by /dev/random:6137 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1388 size:0
+dev_test:this is the random number return by /dev/random:1729 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3672 size:0
+dev_test:this is the random number return by /dev/random:6917 size:0
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+ to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+vdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7051 size:0
+dev_test:this is the random number return by /dev/random:3480 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7696 size:0
+dev_test:this is the random number return by /dev/random:7905 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4206 size:0
+dev_test:this is the random number return by /dev/random:4426 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero beforold id:1 current id:2
+in os_interrupt eip:0x00100257
+this is irq_timer
+
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test fold id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+e read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1119 size:0
+dev_test:this is the random number return by /dev/random:7997 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6609 size:0
+dev_test:this is the random number return by /dev/random:6225 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2289 size:0
+dev_test:this is the random number return by /dev/random:7181 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is bold id:1 current id:2
+in os_interrupt eip:0x0010502d
+this is irq_timer
+
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_test: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 6
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:6
+proc_test: the process fd is 6
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:6
+proc_test:end
+
+proc_told id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+or kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+uf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7889 size:0
+dev_test:this is the random number return by /dev/random:5494 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:8166 size:0
+dev_test:this is the random number return by /dev/random:4420 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1402 size:0
+dev_test:this is the random number return by /dev/random:5483 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+est: the cpu fd is 6
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:6
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+contentold id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2751 size:0
+dev_test:this is the random number return by /dev/random:861 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5153 size:0
+dev_test:this is the random number return by /dev/random:819 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_old id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7958 size:0
+dev_test:this is the random number return by /dev/random:6302 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2674 size:0
+dev_test:this is the random number return by /dev/random:5960 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5904 size:0
+dev_test:this is the random number return by /dev/random:794 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack startold id:2 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:old id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5704 size:0
+dev_test:this is the random number return by /dev/random:379 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1937 size:0
+dev_test:this is the random number return by /dev/random:1914 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4159 size:0
+dev_test:this is the random number return by /dev/random:4504 size:0
+dev_test:null fd:6
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:6
+dev_test:zero fd:6
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:6
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number retold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4old id:2 current id:0
+in os_interrupt eip:0x0010015b
+this is irq_timer
+
+45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+urn by /dev/random:1076 size:0
+dev_test:this is the random number return by /dev/random:1147 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2058 size:0
+dev_test:this is the random number return by /dev/random:2769 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5368 size:0
+dev_test:this is the random number return by /dev/random:6966 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2180 size:0
+dev_test:this is the random number return by /dev/random:7639 size:0
+dev_test:null fd:5
+old id:1 current id:2
+in os_interrupt eip:0x00100bfc
+this is irq_timer
+
+
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+contold id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_tesold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5563 size:0
+dev_test:this is the random number return by /dev/random:4130 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4999 size:0
+dev_test:this is the random number return by /dev/random:7623 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2919 size:0
+dev_test:this is the random number return by /dev/random:1241 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operaold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ent:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+t:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+tion return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1407 size:0
+dev_test:this is the random number return by /dev/random:6090 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6892 size:0
+dev_test:this is the random number return by /dev/random:2717 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:6333 size:0
+dev_test:this is the random number return by /dev/random:6522 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/old id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3571 size:0
+dev_test:this is the random number return by /dev/random:3480 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1163 size:0
+dev_test:this is the random number return by /dev/random:1542 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4431 size:0
+dev_test:this is the random number return by /dev/random:2277 size:0
+dev_test:null fd:5
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:5
+dev_test:zero fd:5
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:5
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is theold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_tesold id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+ random number return by /dev/random:6147 size:0
+dev_test:this is the random number return by /dev/random:532 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5426 size:0
+dev_test:this is the random number return by /dev/random:1874 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:159 size:0
+dev_test:this is the random number return by /dev/random:4713 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3876 size:0
+dev_test:this is the random number return by /dev/random:6369 sold id:1 current id:2
+in os_interrupt eip:0x0010024c
+this is irq_timer
+
+t: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+ize:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:143 size:0
+dev_test:this is the random number return by /dev/random:2378 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2484 size:0
+dev_test:this is the random number return by /dev/random:3347 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:7373 size:0
+dev_test:this is the random number return by /dev/random:671 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null old id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: told id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3562 size:0
+dev_test:this is the random number return by /dev/random:5604 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2801 size:0
+dev_test:this is the random number return by /dev/random:6875 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2690 size:0
+dev_test:this is the random number return by /dev/random:7061 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return valold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+he process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the proold id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:6
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:old id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ue:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2756 size:0
+dev_test:this is the random number return by /dev/random:6302 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:218 size:0
+dev_test:this is the random number return by /dev/random:2347 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1941 size:0
+dev_test:this is the random number return by /dev/random:3351 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+old id:1 current id:2
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+cess fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+proc_test:end
+
+proc_test: the cpu fd is 4
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:4
+proc_test: the mem fd is 4
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:4
+proc_test: the process fd is 4
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:4
+old id:2 current id:0
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:6
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:4
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:4
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x001061ca
+this is irq_timer
+
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:5030 size:0
+dev_test:this is the random number return by /dev/random:3514 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:4430 size:0
+dev_test:this is the random number return by /dev/random:1834 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:2921 size:0
+dev_test:this is the random number return by /dev/random:4705 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_test:end
+
+proc_test: the cpu fd is 5
+proc_test:size:28
+content:
+My cpuinfo:remain to be done
+in file_close:fd:5
+proc_test: the mem fd is 5
+proc_test:size:28
+content:
+My meminfo:remain to be done
+in file_close:fd:5
+proc_test: the process fd is 5
+proc_test:size:65
+content:
+id: 0
+stack size: 262144
+stack start: 2143862 stack end: 2406006
+in file_close:fd:5
+proc_teold id:2 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_test:read /forty/40c size:45
+content:
+forty-forty
+this is a test for kvdb
+40404040
+in file_close:fd:5
+kv_test:end
+
+access:temp name:/forty/40c
+kv_test:not create!!
+kv_test:fd for /forty/40c:5
+kv_test:write /forty/40c size:45
+kv_tesold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:3397 size:0
+dev_test:this is the random number return by /dev/random:342 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4
+dev_test:zero fd:4
+dev_test:this is buf in zero before read buf:40404040
+dev_test:after read /dev/zero buf:0
+in file_close:fd:4
+in file_close:fd:3
+dev_test:end
+
+dev_test:random fd:3
+dev_test:this is the random number return by /dev/random:1187 size:0
+dev_test:this is the random number return by /dev/random:6419 size:0
+dev_test:null fd:4
+in file_write:name:/dev/null buf:40404040 size:8
+dev_test:this is the writing /dev/null operation return value:8
+dev_test:after read /dev/null buf:0
+in file_close:fd:4

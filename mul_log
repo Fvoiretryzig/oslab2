@@ -1,0 +1,8473 @@
+qemu-system-i386 -serial stdio build/os.img
+heap start:0x00200000 heap end:0x08000000
+Hello, OS World!
+heap start:0x00200000 heap end:0x08000000
+in kmt thread_cnt:1
+file_open:inode->name:/proc/0
+in file_close:fd:3
+in kmt thread_cnt:2
+file_open:inode->name:/proc/1
+in file_close:fd:3
+in kmt thread_cnt:3
+file_open:inode->name:/proc/2
+in file_close:fd:3
+in kmt thread_cnt:4
+file_open:inode->name:/proc/3
+in file_close:fd:3
+old id:0 current id:1
+in os_interrupt eip:0x0010323d
+this is irq_timer
+
+file2:this is file2
+the file has not been created!!
+file2:create!!!
+file_open:inode->name:/home/4040
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+old id:1 current id:2
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first wrold id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file1:this is file1
+the file has not been created!!
+file1:create!!!
+file_open:inode->name:/home/forty
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:2old id:3 current id:0
+in os_interrupt eip:0x0010015b
+this is irq_timer
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /hoold id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write sold id:1 current id:2
+in os_interrupt eip:0x001050a1
+this is irq_timer
+
+ite size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:rold id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+0
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:old id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+me/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read sizold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ize:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:6
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file2:end
+
+file2:told id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ead size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:fiold id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+e:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file1old id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+his is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040old id:1 current id:2
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+rst write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+old id:2 current id:3
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read siold id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+old id:0 current id:1
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+old id:1 current id:2
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/40old id:2 current id:3
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+ze:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:old id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x001028e9
+this is irq_timer
+
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+old id:1 current id:2
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+40
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+fiold id:2 current id:3
+in os_interrupt eip:0x00100257
+this is irq_timer
+
+not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/fortyold id:3 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:old id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /homeold id:1 current id:2
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+le22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+contold id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first writold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2old id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ent:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /hoold id:2 current id:3
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:6
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+e size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:siold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19old id:1 current id:2
+in os_interrupt eip:0x0010015b
+this is irq_timer
+
+me/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+old id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first writeold id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ze:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20old id:0 current id:1
+in os_interrupt eip:0x0010015b
+this is irq_timer
+
+
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+conold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:6
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /homeold id:2 current id:3
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+ size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+old id:0 current id:1
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+tent:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write sizeold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+/4040
+this is /home/4040
+in file_close:fd:6
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:readold id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write sizeold id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+thisold id:0 current id:1
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+fiold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+thiold id:2 current id:3
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first wriold id:3 current id:0
+in os_interrupt eip:0x001050a1
+this is irq_timer
+
+ is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not creold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+le2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this isold id:1 current id:2
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+s is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040old id:2 current id:3
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+te size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+ate!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+ /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:1old id:1 current id:2
+in os_interrupt eip:0x001050a1
+this is irq_timer
+
+
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+old id:2 current id:3
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+old id:0 current id:1
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+9
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write sizold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/old id:2 current id:3
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:5
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:endold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+e:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+old id:1 current id:2
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:old id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+old id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not creaold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19old id:1 current id:2
+in os_interrupt eip:0x0010015b
+this is irq_timer
+
+38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first old id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+fileold id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+te!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:6
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:6
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+old id:0 current id:1
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:5
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:1old id:1 current id:2
+in os_interrupt eip:0x0010015b
+this is irq_timer
+
+write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+old id:2 current id:3
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:sold id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:4
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+old id:0 current id:1
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+9
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+old id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:5
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:5
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+old id:2 current id:3
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+ize:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+old id:3 current id:0
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+old id:0 current id:1
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:readold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:4
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file22:end
+
+file22:thisold id:2 current id:3
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:4
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+told id:3 current id:0
+in os_interrupt eip:0x001000e2
+this is irq_timer
+
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11old id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:3
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not createold id:1 current id:2
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+ is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+file22:fd:3
+file22:size:19
+file22:first write size:19
+file22:second write size:19
+file22:read size:19
+content:
+this is /home/4040
+file22:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:3
+file22:end
+
+file22:this is file22
+access:temp name:/home/4040
+file22:not create!!
+old id:2 current id:3
+in os_interrupt eip:0x0010623e
+this is irq_timer
+
+his is /home/forty
+in file_close:fd:4
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!
+file1:fd:3
+file1:size:20
+file1:first write size:20
+file1:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file1:end
+
+file1:this is file1
+access:temp name:/home/forty
+file1:not create!!old id:3 current id:0
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+:fd:5
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:5
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read size:20
+content:
+this is /home/forty
+in file_close:fd:3
+file11:end
+
+file11:this is file11
+access:temp name:/home/forty
+file11:not create!!
+file11:fd:3
+file11:size:20
+file11:first write size:20
+file11:read sizold id:0 current id:1
+in os_interrupt eip:0x0010030e
+this is irq_timer
+
+!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
+access:temp name:/home/4040
+file2:not create!!
+file2:fd:4
+file2:size:19
+file2:first write size:19
+file2:second write size:19
+file2:read size:19
+content:
+this is /home/4040
+file2:read size:38
+content:
+this is /home/4040
+this is /home/4040
+in file_close:fd:4
+file2:end
+
+file2:this is file2
